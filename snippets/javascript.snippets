@@ -94,3 +94,55 @@ snippet gett
 # console.log (Firebug)
 snippet cl
 	console.log(${1});
+# Object
+snippet O
+	Object.
+# Object.create
+snippet Object.cr
+	Object.create(${1:prototype}, {
+		${2}
+	})
+# Object.freeze
+snippet Object.fr
+	Object.freeze(${1:object})
+# Object.isFrozen
+snippet Object.fr?
+	Object.isFrozen(${1:object})
+# Object.seal
+snippet Object.se
+	Object.seal(${1:object})
+# Object.isSealed
+snippet Object.se?
+	Object.isSealed(${1:object})
+# Object.preventExtensions
+snippet Object.pr
+	Object.preventExtensions(${1:object})
+# Object.isExtensible
+snippet Object.pr?
+	Object.isExtensible(${1:object})
+# Object.getOwnPropertyDescriptor
+snippet Object.getod
+	Object.getOwnPropertyDescriptor(${1:object}, ${2:"name"})
+# Object.defineProperty
+snippet Object.def
+	Object.defineProperty(${1:object}, ${2:"name"}, {
+		${3}
+	})
+# Object.keys
+snippet Object.k
+	Object.keys(${1:object})
+# Object.getOwnPropertyNames
+snippet Object.geton
+	Object.getOwnPropertyNames(${1:object})
+# JSON.parse
+snippet jpar
+	JSON.parse(${1:text})
+# JSON.stringify
+snippet jstr
+	JSON.stringify(${1:object})
+# Array
+snippet A
+	Array.
+# Array.isArray
+snippet Array.?
+	Array.isArray(${1:object})
